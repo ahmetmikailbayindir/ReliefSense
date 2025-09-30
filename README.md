@@ -39,13 +39,14 @@ ReliefSense provides **offline-first, IoT-enabled agriculture management** that:
 
 ## 📖 About This Project
 
-This is a **portfolio demonstration** showcasing my technical capabilities as a **Computer Systems Technician** student at Algonquin College. The project demonstrates:
+This is a **portfolio demonstration** showcasing my technical capabilities as a **Computer Systems Technician - Networking** student at Algonquin College. The project demonstrates:
 
-✅ **Full-stack development** (React + TypeScript frontend, Python Flask backend)
-✅ **IoT integration** (Real-time sensor networks, RESTful APIs)
-✅ **System administration** (Database management, network configuration)
-✅ **Problem-solving** (Humanitarian context, offline-first architecture)
-✅ **Professional practices** (Git, documentation, testing)
+✅ **Full-stack web development** - React + TypeScript frontend, Python Flask backend
+✅ **IoT & sensor networks** - Real-time data collection, RESTful API design
+✅ **Database management** - SQLite for data persistence and queries
+✅ **Network architecture** - API design, CORS configuration, client-server communication
+✅ **System administration** - Linux server setup, environment configuration, deployment
+✅ **Version control** - Git workflow, GitHub, professional documentation
 
 ## ✨ Key Features
 
@@ -91,30 +92,31 @@ This is a **portfolio demonstration** showcasing my technical capabilities as a 
 - ⚛️ React 18.2
 - 📘 TypeScript 5.0
 - 🎨 Tailwind CSS 3.4
-- ⚡ Vite 5.4
-- 📊 Recharts 2.10
+- ⚡ Vite (build tool)
+- 📊 Recharts (data visualization)
 - 🎭 Lucide Icons
 
 </td>
 <td>
 
-**Backend**
+**Backend** *(for local dev)*
 - 🐍 Python 3.11
-- 🌶️ Flask 3.0
-- 🗄️ SQLite 3
+- 🌶️ Flask REST API
+- 🗄️ SQLite database
 - 🔌 Flask-CORS
-- 📡 RESTful API
-- 🔄 Real-time updates
+
+**Demo Deployment**
+- GitHub Pages (static)
+- Mock data (no backend)
 
 </td>
 <td>
 
-**DevOps & Tools**
-- 📦 npm/pip package managers
-- 🔧 Git version control
-- 🐳 Docker ready
-- 📝 TypeScript strict mode
-- 🧪 Development server
+**Development Tools**
+- 📦 npm/pip
+- 🔧 Git & GitHub
+- 💻 VS Code
+- 🌐 GitHub Pages
 - 🔒 Environment variables
 
 </td>
@@ -219,17 +221,25 @@ Smart irrigation reduces water usage by 47% while improving crop yields. Critica
 
 ---
 
-## 🎓 Learning Outcomes
+## 🎓 What I Learned Building This
 
-This project demonstrates proficiency in:
+This project helped me develop skills in:
 
-- **IoT & Hardware Integration**: Sensor networks, real-time data collection
-- **Full-Stack Development**: React frontend + Python backend + SQLite database
-- **System Administration**: Server deployment, network configuration, troubleshooting
-- **API Design**: RESTful endpoints, error handling, documentation
-- **Database Management**: Schema design, queries, data persistence
-- **Problem Solving**: Humanitarian context, offline-first challenges
-- **Professional Practices**: Git workflow, documentation, code organization
+**Computer Systems Technician - Networking Skills:**
+- **Network Architecture**: Client-server communication, API design, CORS configuration
+- **System Administration**: Linux environment setup, process management, server deployment
+- **Troubleshooting**: Debugging network issues, API connectivity, environment configuration
+
+**Development Skills:**
+- **Full-Stack Web Development**: React frontend, Python Flask REST API, SQLite database
+- **IoT Concepts**: Real-time sensor data simulation, network monitoring
+- **Version Control**: Git workflow, GitHub Pages deployment
+- **Documentation**: Professional README, code comments, deployment guides
+
+**Soft Skills:**
+- **Problem Solving**: Offline-first architecture for humanitarian contexts
+- **Project Management**: Breaking down features, tracking progress
+- **Communication**: Technical documentation for different audiences
 
 ---
 
@@ -240,22 +250,23 @@ This project demonstrates proficiency in:
 <td width="60%">
 
 **Ahmet Mikail Bayindir**
-*Computer Systems Technician Student*
+*Computer Systems Technician - Networking Student*
 Algonquin College, Ottawa
 
-### 🎯 Specializations
-- Full-Stack Web Development (React, TypeScript, Python)
-- IoT & Sensor Networks
-- System Administration (Linux/Windows)
-- Network Configuration & Troubleshooting
-- Database Management (SQL, SQLite)
+### 🎯 Program Focus & Skills
+- **Networking**: TCP/IP, routing protocols, network troubleshooting
+- **System Administration**: Linux/Windows server configuration
+- **Web Development**: React, TypeScript, Python Flask
+- **Database Management**: SQL, SQLite
+- **IoT Integration**: Sensor networks, real-time data collection
+- **Hardware**: PC troubleshooting, network device configuration
 
 ### 💼 Seeking Co-op Opportunities
 Currently seeking co-op positions in:
-- Software Development
-- System Administration
-- IoT/Hardware Integration
-- DevOps Engineering
+- **Network Administration** / IT Support
+- **System Administration** (Linux/Windows)
+- **Software Development** (Full-stack web)
+- **IoT/Hardware Integration**
 
 </td>
 <td width="40%">
