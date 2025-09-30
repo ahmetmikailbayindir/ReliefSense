@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal, Home } from 'lucide-react'
+import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal } from 'lucide-react'
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
-import NetworkMonitor from './components/NetworkMonitor'
-import DatabaseManager from './components/DatabaseManager'
-import SystemLogs from './components/SystemLogs'
 
 interface SensorReading {
   sensor_id: string
@@ -31,7 +28,6 @@ interface NetworkDevice {
 function App() {
   const [sensors, setSensors] = useState<SensorReading[]>([])
   const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'network' | 'database' | 'logs'>('dashboard')
   const [systemMetrics, setSystemMetrics] = useState<SystemMetrics>({ cpu: 0, memory: 0, disk: 0, network_in: 0, network_out: 0 })
   const [networkDevices] = useState<NetworkDevice[]>([
     { hostname: 'gateway-01', ip: '192.168.1.1', status: 'online', latency: 2 },
@@ -170,62 +166,7 @@ function App() {
         </div>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="bg-white shadow-md border-b-2 border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="flex gap-1">
-            <button
-              onClick={() => setActiveTab('dashboard')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
-                activeTab === 'dashboard'
-                  ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Home className="w-5 h-5" />
-              Dashboard
-            </button>
-            <button
-              onClick={() => setActiveTab('network')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
-                activeTab === 'network'
-                  ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Network className="w-5 h-5" />
-              Network Monitor
-            </button>
-            <button
-              onClick={() => setActiveTab('database')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
-                activeTab === 'database'
-                  ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Database className="w-5 h-5" />
-              Database
-            </button>
-            <button
-              onClick={() => setActiveTab('logs')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
-                activeTab === 'logs'
-                  ? 'text-orange-600 border-b-4 border-orange-600 bg-orange-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Terminal className="w-5 h-5" />
-              System Logs
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 py-6">
-        {/* Tab Content */}
-        {activeTab === 'dashboard' && (
-          <>
         {/* Mission Statement */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-6 border-l-4 border-green-500">
           <div className="flex items-start gap-4">
@@ -456,13 +397,6 @@ function App() {
           </div>
         </div>
 
-          </>
-        )}
-
-        {activeTab === 'network' && <NetworkMonitor />}
-        {activeTab === 'database' && <DatabaseManager />}
-        {activeTab === 'logs' && <SystemLogs />}
-
         {/* Footer */}
         <div className="mt-8 text-center pb-6">
           <p className="mb-3 text-gray-600">Built with React, TypeScript, Python Flask, SQLite, Tailwind CSS, and Recharts</p>
@@ -476,7 +410,7 @@ function App() {
             </a>
           </div>
           <p className="text-sm text-gray-500">
-            💚 Built with passion for humanitarian impact | Computer Systems Technician - Networking @ Algonquin College
+            💚 Built with passion for humanitarian impact | Computer Systems Technician @ Algonquin College
           </p>
         </div>
       </div>
