@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+*.pyc
+__pycache__/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+.env.*
+*.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Sensitive data (should not exist in this demo repo)
+api_keys.py
+credentials.json
+secrets/
