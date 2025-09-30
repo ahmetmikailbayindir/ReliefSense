@@ -40,12 +40,53 @@ function App() {
   useEffect(() => {
     const fetchSensors = async () => {
       try {
-        // Use environment variable or default to relative path for production
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8001'
-        const response = await fetch(`${apiUrl}/api/sensors/readings`)
-        const data = await response.json()
-        setSensors(data.readings)
-        setLoading(false)
+        // For GitHub Pages demo, use mock data
+        const useMockData = import.meta.env.VITE_USE_MOCK_DATA !== 'false'
+
+        if (useMockData) {
+          // Generate mock sensor data
+          const mockData = {
+            readings: [
+              {
+                sensor_id: 'temp_01',
+                type: 'temperature',
+                value: Math.round((20 + Math.random() * 4 - 2) * 10) / 10,
+                unit: '°C',
+                status: 'normal'
+              },
+              {
+                sensor_id: 'humid_01',
+                type: 'humidity',
+                value: Math.round((65 + Math.random() * 10 - 5) * 10) / 10,
+                unit: '%',
+                status: 'normal'
+              },
+              {
+                sensor_id: 'co2_01',
+                type: 'co2',
+                value: Math.round(800 + Math.random() * 100 - 50),
+                unit: 'ppm',
+                status: 'normal'
+              },
+              {
+                sensor_id: 'light_01',
+                type: 'light',
+                value: Math.round(25000 + Math.random() * 4000 - 2000),
+                unit: 'lux',
+                status: 'normal'
+              }
+            ]
+          }
+          setSensors(mockData.readings)
+          setLoading(false)
+        } else {
+          // Use real API
+          const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8001'
+          const response = await fetch(`${apiUrl}/api/sensors/readings`)
+          const data = await response.json()
+          setSensors(data.readings)
+          setLoading(false)
+        }
       } catch (error) {
         console.error('Failed to fetch sensors:', error)
         setLoading(false)

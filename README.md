@@ -12,7 +12,7 @@
 
 **⚠️ Portfolio Demo** | **Full-Stack IoT Project** | **Computer Systems Technician Capstone**
 
-[Live Demo](#) • [Report Bug](https://github.com/ahmetmikailbayindir/ReliefSense/issues) • [Request Feature](https://github.com/ahmetmikailbayindir/ReliefSense/issues)
+[🌐 Live Demo](https://ahmetmikailbayindir.github.io/ReliefSense/) • [Report Bug](https://github.com/ahmetmikailbayindir/ReliefSense/issues) • [Request Feature](https://github.com/ahmetmikailbayindir/ReliefSense/issues)
 
 </div>
 
