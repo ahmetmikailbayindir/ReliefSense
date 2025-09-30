@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+*.pyc
+__pycache__/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Sensitive data (should not exist in this demo repo)
+api_keys.py
+credentials.json
+secrets/
+
+# Private project files (keep these only in opensense-humanitarian)
+HONEST_ASSESSMENT.md
+UNIFIED_DEVELOPMENT_ROADMAP.md
+STRATEGIC_EVOLUTION_2026.md
+**/realistic_sensor_simulator.py
+**/offline_data_manager.py
+PHASE1_PROGRESS.md
+Develipong*.md
