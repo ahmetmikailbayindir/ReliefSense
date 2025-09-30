@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal, Home } from 'lucide-react'
+import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal, Home, Sprout } from 'lucide-react'
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import NetworkMonitor from './components/NetworkMonitor'
 import DatabaseManager from './components/DatabaseManager'
 import SystemLogs from './components/SystemLogs'
+import { CropManager } from './components/CropManager'
+import LanguageSelector from './components/LanguageSelector'
 
 interface SensorReading {
   sensor_id: string
@@ -31,7 +33,7 @@ interface NetworkDevice {
 function App() {
   const [sensors, setSensors] = useState<SensorReading[]>([])
   const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'network' | 'database' | 'logs'>('dashboard')
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'network' | 'database' | 'logs' | 'crops'>('dashboard')
   const [systemMetrics, setSystemMetrics] = useState<SystemMetrics>({ cpu: 0, memory: 0, disk: 0, network_in: 0, network_out: 0 })
   const [networkDevices] = useState<NetworkDevice[]>([
     { hostname: 'gateway-01', ip: '192.168.1.1', status: 'online', latency: 2 },
@@ -162,9 +164,12 @@ function App() {
               <p className="text-green-100 mt-2 text-lg">Empowering Humanitarian Agriculture Through Technology</p>
               <p className="text-green-200 text-sm mt-1">🌍 Refugee Camps • 🌱 Community Gardens • 💧 Smart Irrigation</p>
             </div>
-            <div className="text-right">
-              <p className="text-sm text-green-100">Ahmet Mikail Bayindir</p>
-              <p className="text-xs text-green-200">Computer Systems Technician | Algonquin College</p>
+            <div className="flex items-center gap-4">
+              <LanguageSelector />
+              <div className="text-right">
+                <p className="text-sm text-green-100">Ahmet Mikail Bayindir</p>
+                <p className="text-xs text-green-200">Computer Systems Technician | Algonquin College</p>
+              </div>
             </div>
           </div>
         </div>
@@ -206,6 +211,17 @@ function App() {
             >
               <Database className="w-5 h-5" />
               Database
+            </button>
+            <button
+              onClick={() => setActiveTab('crops')}
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+                activeTab === 'crops'
+                  ? 'text-emerald-600 border-b-4 border-emerald-600 bg-emerald-50'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+              }`}
+            >
+              <Sprout className="w-5 h-5" />
+              Crop Manager
             </button>
             <button
               onClick={() => setActiveTab('logs')}
@@ -461,6 +477,7 @@ function App() {
 
         {activeTab === 'network' && <NetworkMonitor />}
         {activeTab === 'database' && <DatabaseManager />}
+        {activeTab === 'crops' && <CropManager sensorData={{}} />}
         {activeTab === 'logs' && <SystemLogs />}
 
         {/* Footer */}
