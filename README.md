@@ -12,7 +12,12 @@
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8-363636?style=for-the-badge&logo=solidity)](https://soliditylang.org/)
 
-**Open Source** | **Offline-First** | **Multi-Language** | **Blockchain-Verified**
+[![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-success?style=for-the-badge)](ESG_COMPLIANCE.md)
+[![UN SDG](https://img.shields.io/badge/UN_SDG-11_Goals-blue?style=for-the-badge)](ESG_COMPLIANCE.md)
+[![ESG](https://img.shields.io/badge/ESG-Aligned-green?style=for-the-badge)](ESG_COMPLIANCE.md)
+[![Humanitarian](https://img.shields.io/badge/Humanitarian-Standards-orange?style=for-the-badge)](ESG_COMPLIANCE.md)
+
+**Open Source** | **Offline-First** | **Multi-Language** | **Blockchain-Verified** | **ESG-Compliant**
 
 [🌐 Live Demo](https://reliefense.ca) • [📚 Documentation](docs/) • [🤝 Contributing](CONTRIBUTING.md) • [💬 Discussions](https://github.com/ahmetmikailbayindir/ReliefSense/discussions)
 
