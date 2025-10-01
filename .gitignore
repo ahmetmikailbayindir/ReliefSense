@@ -48,6 +48,12 @@ api_keys.py
 credentials.json
 secrets/
 
+# Internal documentation (not for public)
+.internal-docs/
+FINAL_STATUS.md
+COMPLIANCE_CLAIMS.md
+DOMAIN_STRATEGY.md
+
 # Private project files (keep these only in opensense-humanitarian)
 HONEST_ASSESSMENT.md
 UNIFIED_DEVELOPMENT_ROADMAP.md
