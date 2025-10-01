@@ -190,10 +190,10 @@ function App() {
       {/* Tab Navigation */}
       <div className="bg-white shadow-md border-b-2 border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex gap-1">
+          <div className="flex gap-1 overflow-x-auto scrollbar-hide">
             <button
               onClick={() => setActiveTab('dashboard')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'dashboard'
                   ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -204,7 +204,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('network')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'network'
                   ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -215,7 +215,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('database')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'database'
                   ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -226,7 +226,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('crops')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'crops'
                   ? 'text-emerald-600 border-b-4 border-emerald-600 bg-emerald-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -237,7 +237,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('logs')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'logs'
                   ? 'text-orange-600 border-b-4 border-orange-600 bg-orange-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -248,7 +248,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('screenshots')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'screenshots'
                   ? 'text-pink-600 border-b-4 border-pink-600 bg-pink-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -259,7 +259,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('education')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'education'
                   ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -270,7 +270,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('collaboration')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'collaboration'
                   ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
@@ -281,7 +281,7 @@ function App() {
             </button>
             <button
               onClick={() => setActiveTab('blockchain')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
                 activeTab === 'blockchain'
                   ? 'text-indigo-600 border-b-4 border-indigo-600 bg-indigo-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
