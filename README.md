@@ -19,7 +19,7 @@
 
 **Open Source** | **Offline-First** | **Multi-Language** | **Blockchain-Verified** | **ESG-Compliant**
 
-[🌐 Live Demo](https://reliefense.ca) • [📚 Documentation](docs/) • [🤝 Contributing](CONTRIBUTING.md) • [💬 Discussions](https://github.com/ahmetmikailbayindir/ReliefSense/discussions)
+[🌐 Live Demo](https://ahmetmikailbayindir.github.io/ReliefSense) • [📚 Documentation](docs/) • [🤝 Contributing](CONTRIBUTING.md) • [💬 Discussions](https://github.com/ahmetmikailbayindir/ReliefSense/discussions)
 
 </div>
 
@@ -307,7 +307,7 @@ If this project resonates with you, please star the repository to show your supp
 
 **Making humanitarian agriculture accessible to those who need it most**
 
-[Website](https://reliefense.ca) • [Demo](https://reliefense.ca) • [Contact](mailto:ahmetmikailbayindir@protonmail.com)
+[Website](https://ahmetmikailbayindir.github.io/ReliefSense) • [Demo](https://ahmetmikailbayindir.github.io/ReliefSense) • [Contact](mailto:ahmetmikailbayindir@protonmail.com)
 
 </div>
 

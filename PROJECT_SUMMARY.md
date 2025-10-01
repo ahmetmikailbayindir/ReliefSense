@@ -170,8 +170,8 @@ Deployment: GitHub Pages + Custom Domain
 ## 🔗 Links & Resources
 
 ### Live Platform
-- **Website:** https://reliefense.ca
-- **Demo:** https://reliefense.ca
+- **Website:** https://ahmetmikailbayindir.github.io/ReliefSense
+- **Demo:** https://ahmetmikailbayindir.github.io/ReliefSense
 - **GitHub:** https://github.com/ahmetmikailbayindir/ReliefSense
 
 ### Documentation

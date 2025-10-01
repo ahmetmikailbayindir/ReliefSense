@@ -47,7 +47,7 @@ npm run deploy
 
 ### 4. Verify
 
-Visit: https://reliefense.ca (may take up to 24 hours for DNS propagation)
+Visit: https://ahmetmikailbayindir.github.io/ReliefSense (may take up to 24 hours for DNS propagation)
 
 ---
 
