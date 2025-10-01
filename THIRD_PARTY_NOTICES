@@ -1,0 +1,94 @@
+# Third-Party Notices
+
+ReliefSense uses third-party open-source software. Below are the licenses and copyright notices for these components.
+
+---
+
+## Frontend Dependencies
+
+### React (MIT License)
+Copyright (c) Meta Platforms, Inc. and affiliates.
+License: MIT
+https://github.com/facebook/react
+
+### TypeScript (Apache License 2.0)
+Copyright (c) Microsoft Corporation.
+License: Apache-2.0
+https://github.com/microsoft/TypeScript
+
+### Tailwind CSS (MIT License)
+Copyright (c) Tailwind Labs, Inc.
+License: MIT
+https://github.com/tailwindlabs/tailwindcss
+
+### Vite (MIT License)
+Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+License: MIT
+https://github.com/vitejs/vite
+
+### Recharts (MIT License)
+Copyright (c) 2015-present Recharts Contributors
+License: MIT
+https://github.com/recharts/recharts
+
+### Lucide React (ISC License)
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather.
+License: ISC
+https://github.com/lucide-icons/lucide
+
+---
+
+## Backend Dependencies
+
+### Python (PSF License)
+Copyright (c) 2001-2025 Python Software Foundation
+License: PSF
+https://www.python.org/
+
+### Flask (BSD-3-Clause)
+Copyright 2010 Pallets
+License: BSD-3-Clause
+https://github.com/pallets/flask
+
+### SQLite (Public Domain)
+SQLite is in the public domain.
+https://www.sqlite.org/
+
+---
+
+## Blockchain Dependencies
+
+### Solidity (GPL-3.0)
+Copyright (c) Ethereum Foundation
+License: GPL-3.0
+https://github.com/ethereum/solidity
+
+### Web3.js (LGPL-3.0)
+Copyright (c) ChainSafe Systems
+License: LGPL-3.0
+https://github.com/web3/web3.js
+
+---
+
+## Full License Texts
+
+For the full text of each license, please refer to:
+- MIT License: https://opensource.org/licenses/MIT
+- Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- ISC License: https://opensource.org/licenses/ISC
+- BSD-3-Clause: https://opensource.org/licenses/BSD-3-Clause
+- GPL-3.0: https://opensource.org/licenses/GPL-3.0
+- LGPL-3.0: https://opensource.org/licenses/LGPL-3.0
+- PSF License: https://docs.python.org/3/license.html
+
+---
+
+## Notice
+
+This file provides attribution for third-party software used in ReliefSense.
+If you believe any attribution is missing or incorrect, please contact:
+ahmetmikailbayindir@protonmail.com
+
+---
+
+**Copyright © 2025 ReliefSense & Ahmet Mikail Bayindir. All rights reserved.**

@@ -220,10 +220,16 @@ See [SECURITY.md](SECURITY.md) for our security policy.
 
 ---
 
-## 📄 License
+## 📄 License & Legal
 
 This project is licensed under the **MIT License** with humanitarian use clause.
-See [LICENSE](LICENSE) for details.
+
+**Legal Documentation:**
+- [LICENSE](LICENSE) - MIT License with humanitarian clause
+- [COPYRIGHT](COPYRIGHT) - Copyright notice and ownership
+- [TRADEMARK](TRADEMARK) - Trademark usage guidelines
+- [DISCLAIMER](DISCLAIMER) - Legal disclaimer and limitations
+- [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES) - Third-party software licenses
 
 **Copyright © 2025 ReliefSense & Ahmet Mikail Bayindir. All rights reserved.**
 

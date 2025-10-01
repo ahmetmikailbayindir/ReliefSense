@@ -1,0 +1,272 @@
+# Legal Disclaimer
+
+**Last Updated:** September 30, 2025
+
+---
+
+## General Disclaimer
+
+**NO WARRANTY**
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+ReliefSense and Ahmet Mikail Bayindir make no representations or warranties
+about the suitability, reliability, availability, timeliness, or accuracy of
+the software or related documentation for any purpose.
+
+---
+
+## Limitation of Liability
+
+IN NO EVENT SHALL AHMET MIKAIL BAYINDIR OR RELIEFENSE BE LIABLE FOR ANY
+SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT
+LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION,
+LOSS OF DATA, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR
+INABILITY TO USE THE SOFTWARE.
+
+**Maximum Liability:** To the extent permitted by law, the total liability
+shall not exceed CAD $100.
+
+---
+
+## Use at Your Own Risk
+
+**Humanitarian Deployment:**
+
+This software is designed for humanitarian use in refugee camps and disaster
+zones. However:
+
+- Users assume all risks associated with deployment
+- No guarantee of food production or water savings
+- Results may vary based on environmental conditions
+- Technical support is provided on a best-effort basis
+
+**Field Conditions:**
+
+The software is designed for offline-first operation but:
+
+- Hardware may fail in harsh environments
+- Data may be lost due to hardware damage
+- Backup procedures are the user's responsibility
+- No liability for agricultural losses
+
+---
+
+## Data and Privacy
+
+**User Data:**
+
+- Users are responsible for their own data protection
+- ReliefSense processes data locally (offline-first)
+- No guarantee against data loss or corruption
+- Users must comply with local data protection laws
+
+**Sensitive Information:**
+
+- Do not store highly sensitive refugee data without encryption
+- Users responsible for GDPR/UNHCR compliance in their deployment
+- No liability for data breaches at the deployment level
+
+---
+
+## Third-Party Components
+
+**Open-Source Software:**
+
+This software includes third-party components. See THIRD_PARTY_NOTICES.
+
+- We are not liable for issues in third-party software
+- Each component has its own license and warranty terms
+- Users must comply with all third-party licenses
+
+---
+
+## Blockchain and Smart Contracts
+
+**Ethereum Blockchain:**
+
+Smart contracts are deployed on Ethereum Sepolia Testnet:
+
+- **Testnet Only:** Not for production use with real value
+- **No Financial Advice:** Tokens have no monetary value
+- **Contract Risks:** Smart contracts may have bugs
+- **No Liability:** We are not responsible for blockchain network issues
+
+**ReliefToken:**
+
+- For incentive purposes only, no monetary value
+- Not a security or financial instrument
+- No guarantee of functionality or permanence
+
+---
+
+## Health and Safety
+
+**Agricultural Use:**
+
+- This is a monitoring tool, not agricultural advice
+- Consult qualified agronomists for farming decisions
+- No liability for crop failures or health issues
+- Users responsible for food safety testing
+
+**Hardware Safety:**
+
+- Follow proper electrical safety procedures
+- Raspberry Pi may overheat in extreme conditions
+- Solar panels require proper installation
+- No liability for injuries from improper use
+
+---
+
+## Accuracy of Information
+
+**Documentation:**
+
+- Documentation provided "as-is"
+- May contain errors or outdated information
+- Users should verify critical information
+- No warranty of accuracy or completeness
+
+**Metrics and Projections:**
+
+- Impact metrics are projections, not guarantees
+- Water savings may vary by deployment
+- Yield increases depend on many factors
+- Cost estimates are approximations
+
+---
+
+## No Professional Advice
+
+**Not Legal, Financial, or Medical Advice:**
+
+This software and documentation do not constitute:
+
+- Legal advice (consult a lawyer)
+- Financial advice (consult a financial advisor)
+- Medical advice (consult a doctor)
+- Professional agricultural consulting (consult an agronomist)
+
+---
+
+## External Links
+
+**Third-Party Websites:**
+
+Documentation may contain links to external websites:
+
+- We are not responsible for external content
+- External sites have their own terms and privacy policies
+- Links do not imply endorsement
+
+---
+
+## Regulatory Compliance
+
+**User Responsibility:**
+
+Users must ensure compliance with:
+
+- Local laws and regulations
+- Import/export restrictions on technology
+- Data protection laws (GDPR, etc.)
+- Agricultural regulations
+- Telecommunications regulations
+
+**No Legal Review:**
+
+This software has not been reviewed for compliance in all jurisdictions.
+Users deploying in specific countries must verify legal compliance.
+
+---
+
+## Changes to Software
+
+**No Guarantee of Continuity:**
+
+- Software may be modified or discontinued at any time
+- Breaking changes may occur between versions
+- No obligation to maintain backward compatibility
+- No guarantee of long-term support
+
+---
+
+## Humanitarian Use
+
+**Not a Substitute for Aid:**
+
+- ReliefSense is a tool, not a complete solution
+- Does not replace humanitarian workers or organizations
+- Should be used as part of broader food security programs
+- No liability for failure to achieve humanitarian outcomes
+
+**Conflict Zones:**
+
+Use in conflict zones carries additional risks:
+
+- Hardware may be confiscated or destroyed
+- Internet access may be blocked or monitored
+- Staff may face security threats
+- No liability for security-related incidents
+
+---
+
+## Indemnification
+
+**User Agreement:**
+
+By using this software, you agree to indemnify and hold harmless Ahmet Mikail
+Bayindir and ReliefSense from any claims, damages, losses, or expenses arising
+from your use of the software.
+
+---
+
+## Jurisdiction and Disputes
+
+**Governing Law:**
+
+This disclaimer is governed by the laws of the Province of Ontario, Canada,
+without regard to conflict of law principles.
+
+**Dispute Resolution:**
+
+Disputes shall be resolved through:
+1. Good faith negotiation
+2. Mediation (if negotiation fails)
+3. Arbitration in Ottawa, Ontario (if mediation fails)
+
+---
+
+## Severability
+
+If any provision of this disclaimer is found to be unenforceable, the remaining
+provisions shall remain in full force and effect.
+
+---
+
+## Contact
+
+**For Legal Inquiries:**
+
+Ahmet Mikail Bayindir
+Email: ahmetmikailbayindir@protonmail.com
+Subject: [LEGAL] Your inquiry
+
+**For General Questions:**
+
+Use GitHub Issues or Discussions for non-legal questions.
+
+---
+
+## Acceptance
+
+**By using, downloading, or accessing ReliefSense, you acknowledge that you have
+read this disclaimer, understand it, and agree to be bound by its terms.**
+
+If you do not agree, do not use the software.
+
+---
+
+**Copyright © 2025 ReliefSense & Ahmet Mikail Bayindir. All rights reserved.**
