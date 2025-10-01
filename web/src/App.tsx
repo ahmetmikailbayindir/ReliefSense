@@ -166,19 +166,19 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       {/* Header */}
       <div className="bg-gradient-to-r from-green-600 to-emerald-600 shadow-xl">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-4xl font-bold flex items-center gap-3 text-white">
-                <Droplets className="w-10 h-10" />
+        <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex-1">
+              <h1 className="text-2xl sm:text-4xl font-bold flex items-center gap-2 sm:gap-3 text-white">
+                <Droplets className="w-6 h-6 sm:w-10 sm:h-10" />
                 ReliefSense
               </h1>
-              <p className="text-green-100 mt-2 text-lg">Empowering Humanitarian Agriculture Through Technology</p>
-              <p className="text-green-200 text-sm mt-1">🌍 Refugee Camps • 🌱 Community Gardens • 💧 Smart Irrigation</p>
+              <p className="text-green-100 mt-1 sm:mt-2 text-sm sm:text-lg">Empowering Humanitarian Agriculture Through Technology</p>
+              <p className="text-green-200 text-xs sm:text-sm mt-1">🌍 Refugee Camps • 🌱 Community Gardens • 💧 Smart Irrigation</p>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4 self-end sm:self-auto">
               <LanguageSelector />
-              <div className="text-right">
+              <div className="text-right hidden md:block">
                 <p className="text-sm text-green-100">Ahmet Mikail Bayindir</p>
                 <p className="text-xs text-green-200">Computer Systems Technician | Algonquin College</p>
               </div>
@@ -188,113 +188,113 @@ function App() {
       </div>
 
       {/* Tab Navigation */}
-      <div className="bg-white shadow-md border-b-2 border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="flex gap-1 overflow-x-auto scrollbar-hide">
+      <div className="bg-white shadow-md border-b-2 border-gray-200 overflow-x-auto">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex gap-1 min-w-max">
             <button
               onClick={() => setActiveTab('dashboard')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'dashboard'
                   ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Home className="w-5 h-5" />
-              Dashboard
+              <Home className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Dashboard</span>
             </button>
             <button
               onClick={() => setActiveTab('network')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'network'
                   ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Network className="w-5 h-5" />
-              Network Monitor
+              <Network className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Network Monitor</span>
             </button>
             <button
               onClick={() => setActiveTab('database')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'database'
                   ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Database className="w-5 h-5" />
-              Database
+              <Database className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Database</span>
             </button>
             <button
               onClick={() => setActiveTab('crops')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'crops'
                   ? 'text-emerald-600 border-b-4 border-emerald-600 bg-emerald-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Sprout className="w-5 h-5" />
-              Crop Manager
+              <Sprout className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Crop Manager</span>
             </button>
             <button
               onClick={() => setActiveTab('logs')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'logs'
                   ? 'text-orange-600 border-b-4 border-orange-600 bg-orange-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Terminal className="w-5 h-5" />
-              System Logs
+              <Terminal className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">System Logs</span>
             </button>
             <button
               onClick={() => setActiveTab('screenshots')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'screenshots'
                   ? 'text-pink-600 border-b-4 border-pink-600 bg-pink-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Image className="w-5 h-5" />
-              Screenshots
+              <Image className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Screenshots</span>
             </button>
             <button
               onClick={() => setActiveTab('education')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'education'
                   ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <BookOpen className="w-5 h-5" />
-              Education
+              <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Education</span>
             </button>
             <button
               onClick={() => setActiveTab('collaboration')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'collaboration'
                   ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Users className="w-5 h-5" />
-              Collaboration
+              <Users className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Collaboration</span>
             </button>
             <button
               onClick={() => setActiveTab('blockchain')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
+              className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 sm:py-4 font-semibold transition-all whitespace-nowrap text-sm sm:text-base ${
                 activeTab === 'blockchain'
                   ? 'text-indigo-600 border-b-4 border-indigo-600 bg-indigo-50'
                   : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
               }`}
             >
-              <Coins className="w-5 h-5" />
-              Blockchain
+              <Coins className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="hidden sm:inline">Blockchain</span>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-6">
         {/* Tab Content */}
         {activeTab === 'dashboard' && (
           <>
