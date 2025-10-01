@@ -33,7 +33,7 @@ const LanguageSelector: React.FC = () => {
           />
 
           {/* Dropdown */}
-          <div className={`absolute top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-20 ${
+          <div className={`absolute top-full mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 py-1 z-[9999] max-h-96 overflow-y-auto ${
             isRTL ? 'left-0' : 'right-0'
           }`}>
             {supportedLanguages.map((lang) => (

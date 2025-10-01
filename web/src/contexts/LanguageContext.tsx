@@ -1,11 +1,11 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { getTranslation, Translation, supportedLanguages } from '../i18n/translations';
+import { getTranslation, Translation, supportedLanguages, LanguageOption, Language } from '../i18n/translations';
 
 interface LanguageContextType {
-  language: string;
-  setLanguage: (language: string) => void;
+  language: Language;
+  setLanguage: (language: Language) => void;
   t: Translation;
-  supportedLanguages: typeof supportedLanguages;
+  supportedLanguages: LanguageOption[];
   isRTL: boolean;
 }
 
@@ -17,17 +17,17 @@ interface LanguageProviderProps {
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   // Initialize language from localStorage or default to English
-  const [language, setLanguageState] = useState<string>(() => {
+  const [language, setLanguageState] = useState<Language>(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('opensense-language');
       if (stored && supportedLanguages.some(lang => lang.code === stored)) {
-        return stored;
+        return stored as Language;
       }
 
       // Try to detect browser language
       const browserLang = navigator.language.split('-')[0];
       if (supportedLanguages.some(lang => lang.code === browserLang)) {
-        return browserLang;
+        return browserLang as Language;
       }
     }
     return 'en';
@@ -36,17 +36,19 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   // Get current translation
   const t = getTranslation(language);
 
-  // Check if language is RTL
-  const isRTL = language === 'ar';
+  // Get current language option to check RTL
+  const currentLangOption = supportedLanguages.find(lang => lang.code === language);
+  const isRTL = currentLangOption?.isRTL || false;
 
   // Set language and persist to localStorage
-  const setLanguage = (newLanguage: string) => {
+  const setLanguage = (newLanguage: Language) => {
     if (supportedLanguages.some(lang => lang.code === newLanguage)) {
       setLanguageState(newLanguage);
       localStorage.setItem('opensense-language', newLanguage);
 
       // Set document direction for RTL languages
-      document.documentElement.dir = newLanguage === 'ar' ? 'rtl' : 'ltr';
+      const newLangOption = supportedLanguages.find(lang => lang.code === newLanguage);
+      document.documentElement.dir = newLangOption?.isRTL ? 'rtl' : 'ltr';
       document.documentElement.lang = newLanguage;
     }
   };

@@ -1,11 +1,23 @@
+/**
+ * Copyright (c) 2025 ReliefSense & Ahmet Mikail Bayindir
+ * SPDX-License-Identifier: MIT
+ *
+ * ReliefSense - Humanitarian Agriculture Platform
+ * https://github.com/ahmetmikailbayindir/ReliefSense
+ */
+
 import React, { useState, useEffect } from 'react'
-import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal, Home, Sprout } from 'lucide-react'
+import { Activity, Droplets, Wind, Sun, TrendingUp, AlertCircle, Server, Network, Database, Cpu, HardDrive, Wifi, Shield, Terminal, Home, Sprout, Image, BookOpen, Users, Coins } from 'lucide-react'
 import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import NetworkMonitor from './components/NetworkMonitor'
 import DatabaseManager from './components/DatabaseManager'
 import SystemLogs from './components/SystemLogs'
 import { CropManager } from './components/CropManager'
 import LanguageSelector from './components/LanguageSelector'
+import Screenshots from './components/Screenshots'
+import Education from './components/Education'
+import Collaboration from './components/Collaboration'
+import Blockchain from './components/Blockchain'
 
 interface SensorReading {
   sensor_id: string
@@ -33,7 +45,7 @@ interface NetworkDevice {
 function App() {
   const [sensors, setSensors] = useState<SensorReading[]>([])
   const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'network' | 'database' | 'logs' | 'crops'>('dashboard')
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'network' | 'database' | 'logs' | 'crops' | 'screenshots' | 'education' | 'collaboration' | 'blockchain'>('dashboard')
   const [systemMetrics, setSystemMetrics] = useState<SystemMetrics>({ cpu: 0, memory: 0, disk: 0, network_in: 0, network_out: 0 })
   const [networkDevices] = useState<NetworkDevice[]>([
     { hostname: 'gateway-01', ip: '192.168.1.1', status: 'online', latency: 2 },
@@ -233,6 +245,50 @@ function App() {
             >
               <Terminal className="w-5 h-5" />
               System Logs
+            </button>
+            <button
+              onClick={() => setActiveTab('screenshots')}
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+                activeTab === 'screenshots'
+                  ? 'text-pink-600 border-b-4 border-pink-600 bg-pink-50'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+              }`}
+            >
+              <Image className="w-5 h-5" />
+              Screenshots
+            </button>
+            <button
+              onClick={() => setActiveTab('education')}
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+                activeTab === 'education'
+                  ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+              }`}
+            >
+              <BookOpen className="w-5 h-5" />
+              Education
+            </button>
+            <button
+              onClick={() => setActiveTab('collaboration')}
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+                activeTab === 'collaboration'
+                  ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+              }`}
+            >
+              <Users className="w-5 h-5" />
+              Collaboration
+            </button>
+            <button
+              onClick={() => setActiveTab('blockchain')}
+              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all ${
+                activeTab === 'blockchain'
+                  ? 'text-indigo-600 border-b-4 border-indigo-600 bg-indigo-50'
+                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+              }`}
+            >
+              <Coins className="w-5 h-5" />
+              Blockchain
             </button>
           </div>
         </div>
@@ -479,6 +535,10 @@ function App() {
         {activeTab === 'database' && <DatabaseManager />}
         {activeTab === 'crops' && <CropManager sensorData={{}} />}
         {activeTab === 'logs' && <SystemLogs />}
+        {activeTab === 'screenshots' && <Screenshots />}
+        {activeTab === 'education' && <Education />}
+        {activeTab === 'collaboration' && <Collaboration />}
+        {activeTab === 'blockchain' && <Blockchain />}
 
         {/* Footer */}
         <div className="mt-8 text-center pb-6">

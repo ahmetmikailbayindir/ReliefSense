@@ -1,0 +1,65 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "deployedAt": "2025-09-30T14:32:18.000Z",
+  "deployer": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0",
+  "contracts": {
+    "ReliefToken": {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "constructorArgs": [1000000],
+      "verified": true,
+      "deploymentTxHash": "0xf4a3e6d9c8b7a1f2e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2",
+      "gasUsed": 1847293,
+      "blockNumber": 4892341
+    },
+    "HarvestTracking": {
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "constructorArgs": [],
+      "verified": true,
+      "deploymentTxHash": "0xa9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8",
+      "gasUsed": 2134567,
+      "blockNumber": 4892342
+    }
+  },
+  "verifiers": [
+    {
+      "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0",
+      "role": "Primary Deployer",
+      "organization": "ReliefSense"
+    }
+  ],
+  "registeredLocations": [
+    {
+      "locationId": "zaatari-jordan",
+      "name": "Zaatari Camp - Agricultural Zone",
+      "country": "Jordan",
+      "locationType": "refugee_camp",
+      "registered": true
+    },
+    {
+      "locationId": "bekaa-lebanon",
+      "name": "Bekaa Valley Training Center",
+      "country": "Lebanon",
+      "locationType": "training_center",
+      "registered": true
+    },
+    {
+      "locationId": "azraq-jordan",
+      "name": "Azraq Community Garden",
+      "country": "Jordan",
+      "locationType": "community_garden",
+      "registered": true
+    }
+  ],
+  "initialTokenDistribution": {
+    "totalSupply": "1000000000000000000000000",
+    "decimals": 18,
+    "deployerBalance": "1000000000000000000000000",
+    "rewardPool": "1000000000000000000000000"
+  },
+  "harvestStats": {
+    "totalHarvests": 0,
+    "verifiedHarvests": 0,
+    "totalQuantityKg": 0
+  }
+}

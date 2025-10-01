@@ -53,7 +53,21 @@ export type Language = keyof typeof translations
 export type TranslationKey = keyof typeof translations.en
 export type Translation = typeof translations.en
 
-export const supportedLanguages: Language[] = ['en', 'ar', 'fr', 'es', 'tr', 'ku']
+export interface LanguageOption {
+  code: Language
+  name: string
+  flag: string
+  isRTL?: boolean
+}
+
+export const supportedLanguages: LanguageOption[] = [
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'ar', name: 'العربية', flag: '🇸🇦', isRTL: true },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
+  { code: 'ku', name: 'کوردی', flag: '🏴', isRTL: true }
+]
 
 export function getTranslation(lang: Language): Translation {
   return translations[lang] || translations.en

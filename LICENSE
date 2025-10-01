@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2025 Ahmet Mikail Bayindir
+Copyright (c) 2025 ReliefSense & Ahmet Mikail Bayindir
+All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,21 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+ADDITIONAL HUMANITARIAN USE CLAUSE:
+
+This software is specifically intended for humanitarian, educational, and
+non-commercial purposes. Organizations using this software to support refugee
+communities, disaster relief, or food security initiatives are encouraged to
+share their improvements and experiences with the community.
+
+While commercial use is permitted under the MIT License, we request that
+commercial entities using this software contribute back to the project through:
+- Code contributions
+- Financial support for humanitarian deployments
+- Technical expertise and mentorship
+- Documentation improvements
+
+"ReliefSense" is a trademark of Ahmet Mikail Bayindir.
