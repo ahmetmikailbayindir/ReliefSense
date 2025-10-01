@@ -188,115 +188,11 @@ function App() {
         </div>
       </div>
 
-      {/* Tab Navigation */}
+      {/* Tab Navigation - Hamburger Menu for All Screen Sizes */}
       <div className="bg-white shadow-md border-b-2 border-gray-200">
         <div className="container mx-auto px-2 sm:px-4">
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-1">
-            <button
-              onClick={() => setActiveTab('dashboard')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'dashboard'
-                  ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Home className="w-5 h-5" />
-              Dashboard
-            </button>
-            <button
-              onClick={() => setActiveTab('network')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'network'
-                  ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Network className="w-5 h-5" />
-              Network Monitor
-            </button>
-            <button
-              onClick={() => setActiveTab('database')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'database'
-                  ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Database className="w-5 h-5" />
-              Database
-            </button>
-            <button
-              onClick={() => setActiveTab('crops')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'crops'
-                  ? 'text-emerald-600 border-b-4 border-emerald-600 bg-emerald-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Sprout className="w-5 h-5" />
-              Crop Manager
-            </button>
-            <button
-              onClick={() => setActiveTab('logs')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'logs'
-                  ? 'text-orange-600 border-b-4 border-orange-600 bg-orange-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Terminal className="w-5 h-5" />
-              System Logs
-            </button>
-            <button
-              onClick={() => setActiveTab('screenshots')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'screenshots'
-                  ? 'text-pink-600 border-b-4 border-pink-600 bg-pink-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Image className="w-5 h-5" />
-              Screenshots
-            </button>
-            <button
-              onClick={() => setActiveTab('education')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'education'
-                  ? 'text-blue-600 border-b-4 border-blue-600 bg-blue-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <BookOpen className="w-5 h-5" />
-              Education
-            </button>
-            <button
-              onClick={() => setActiveTab('collaboration')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'collaboration'
-                  ? 'text-purple-600 border-b-4 border-purple-600 bg-purple-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Users className="w-5 h-5" />
-              Collaboration
-            </button>
-            <button
-              onClick={() => setActiveTab('blockchain')}
-              className={`flex items-center gap-2 px-6 py-4 font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'blockchain'
-                  ? 'text-indigo-600 border-b-4 border-indigo-600 bg-indigo-50'
-                  : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
-              }`}
-            >
-              <Coins className="w-5 h-5" />
-              Blockchain
-            </button>
-          </div>
-
-          {/* Mobile Navigation - Hamburger Menu Button */}
-          <div className="md:hidden flex items-center justify-between py-3">
-            <span className="text-gray-800 font-semibold capitalize">{activeTab}</span>
+          <div className="flex items-center justify-between py-3">
+            <span className="text-gray-800 font-semibold capitalize">{activeTab.replace('-', ' ')}</span>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -312,11 +208,11 @@ function App() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setMobileMenuOpen(false)}>
-          <div className="absolute right-0 top-0 h-full w-64 bg-white shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-center justify-between p-4 border-b-2 border-gray-200">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setMobileMenuOpen(false)}>
+          <div className="absolute right-0 top-0 h-full w-64 sm:w-80 bg-white shadow-2xl overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-4 border-b-2 border-gray-200 sticky top-0 bg-white z-10">
               <h3 className="text-lg font-bold text-gray-800">Navigation</h3>
               <button
                 onClick={() => setMobileMenuOpen(false)}
