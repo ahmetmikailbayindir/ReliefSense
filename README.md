@@ -21,6 +21,12 @@
 
 [🌐 Live Demo](https://ahmetmikailbayindir.github.io/ReliefSense) • [📚 Documentation](docs/) • [🤝 Contributing](CONTRIBUTING.md) • [💬 Discussions](https://github.com/ahmetmikailbayindir/ReliefSense/discussions)
 
+> **📢 New Repository Structure:**
+> This is the **public demonstration repository**. For development and full system:
+> - [reliefsense-ops](https://github.com/ahmetmikailbayindir/reliefsense-ops) - Development meta-repo
+> - [ReliefSense-Foundation](https://github.com/ahmetmikailbayindir/ReliefSense-Foundation) - Public NGO mission
+> - ReliefSense-Technologies (Private) - Full production system
+
 </div>
 
 ---
